@@ -3,6 +3,10 @@
 </template>
 
 <script>
+/* eslint-disable
+  @typescript-eslint/no-unsafe-call
+  */
+ 
 import './button.css';
 
 export default {
@@ -33,14 +37,14 @@ export default {
     classes() {
       return {
         'storybook-button': true,
-        'storybook-button--primary': this.primary,
+        'storybook-button--primary': (this.primary as boolean),
         'storybook-button--secondary': !this.primary,
-        [`storybook-button--${this.size}`]: true,
+        [`storybook-button--${this.size as string}`]: true,
       };
     },
     style() {
       return {
-        backgroundColor: this.backgroundColor,
+        backgroundColor: (this.backgroundColor as string),
       };
     },
   },

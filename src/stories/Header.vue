@@ -30,6 +30,12 @@
 </template>
 
 <script>
+/* eslint-disable
+  @typescript-eslint/no-unsafe-call
+  */
+
+
+
 import './header.css';
 import MyButton from './Button.vue';
 
