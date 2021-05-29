@@ -45,6 +45,7 @@
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-jest": "^24.1.0",
+    "eslint-plugin-quasar": "^1.0.0",
     "eslint-plugin-vue": "^7.0.0",
     "majestic": "^1.2.24",
     "wallaby-vue-compiler": "^1.0.3"
