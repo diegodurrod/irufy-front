@@ -1,5 +1,14 @@
-import { createLocalVue, mount } from '@vue/test-utils';
-import * as All from 'quasar';
+/* eslint-disable
+  @typescript-eslint/no-unsafe-member-access,
+  @typescript-eslint/no-unsafe-assignment,
+  @typescript-eslint/no-unsafe-call,
+  @typescript-eslint/no-explicit-any
+  */
+
+import { createLocalVue } from '@vue/test-utils';
+import * as All from 'quasar'; // <= cherry pick only the components you actually use
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { VueConstructor } from 'vue';
 
 import QBtnDemo from './demo/QBtn-demo';
@@ -9,8 +18,10 @@ import QBtnDemo from './demo/QBtn-demo';
 const { Quasar } = All;
 
 function isComponent(value: unknown): value is VueConstructor {
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return (
     !!value &&
+    // eslint-disable @typescript-eslint/no-unsafe-member-access
     (value as VueConstructor).component &&
     (value as VueConstructor).component.name != null
   );
