@@ -34,8 +34,6 @@
   @typescript-eslint/no-unsafe-call
   */
 
-
-
 import './header.css';
 import MyButton from './Button.vue';
 
