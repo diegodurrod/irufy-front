@@ -1,3 +1,7 @@
+/*
+ eslint-disable
+ @typescript-eslint/no-unsafe-assignment
+ */
 import HelloWorld from '../components/HelloWorld.vue';
 
 //👇 This default export determines where your story goes in the story list

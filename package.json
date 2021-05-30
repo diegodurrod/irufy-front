@@ -23,8 +23,9 @@
     "audit:node_modules": "yarn audit --json > ./test/audits/node_modules_audit.json",
     "audit:licenses": "nlf --summary detail > ./test/audits/licenses.txt",
     "audit:lighthouse": "lighthouse http://localhost:3000 view --output-path=./test/lighthouse/reports/index.html --config-path=./test/lighthouse/configs/full-config.js",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 --modern --loglevel silly",
     "storybook:debug:webpack": "start-storybook --debug-webpack",
+    "storybook:help": "start-storybook --help",
     "build-storybook": "build-storybook"
   },
   "dependencies": {
