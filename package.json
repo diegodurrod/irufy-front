@@ -22,7 +22,11 @@
     "audit:snyk": "snyk test --json > ./test/audits/snyk.json",
     "audit:node_modules": "yarn audit --json > ./test/audits/node_modules_audit.json",
     "audit:licenses": "nlf --summary detail > ./test/audits/licenses.txt",
-    "audit:lighthouse": "lighthouse http://localhost:3000 view --output-path=./test/lighthouse/reports/index.html --config-path=./test/lighthouse/configs/full-config.js"
+    "audit:lighthouse": "lighthouse http://localhost:3000 view --output-path=./test/lighthouse/reports/index.html --config-path=./test/lighthouse/configs/full-config.js",
+    "storybook": "start-storybook -p 6006 --modern --loglevel silly",
+    "storybook:debug:webpack": "start-storybook --debug-webpack",
+    "storybook:help": "start-storybook --help",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@quasar/extras": "^1.10.6",
@@ -38,6 +42,12 @@
     "@quasar/quasar-app-extension-testing-e2e-cypress": "^3.1.0",
     "@quasar/quasar-app-extension-testing-quality": "^1.0.0-beta.8",
     "@quasar/quasar-app-extension-testing-unit-jest": "^2.2.2",
+    "@storybook/addon-actions": "^6.3.0-beta.4",
+    "@storybook/addon-essentials": "^6.3.0-beta.4",
+    "@storybook/addon-links": "^6.3.0-beta.4",
+    "@storybook/builder-webpack5": "^6.3.0-beta.4",
+    "@storybook/manager-webpack5": "^6.3.0-beta.4",
+    "@storybook/vue3": "^6.3.0-beta.4",
     "@types/node": "^10.17.60",
     "@typescript-eslint/eslint-plugin": "^4.25.0",
     "@typescript-eslint/parser": "^4.25.0",
