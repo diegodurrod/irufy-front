@@ -16,13 +16,8 @@
 </template>
 
 <script>
-/*
-** Custom button for Irufy
-** TODO: - sass colors configuration in storybook !!
-**       - Rename class?
-*/
 export default {
-  name: 'iButton',
+  name: 'Button',
   props: {
     id: {                   // ID
       type: String,
@@ -56,15 +51,7 @@ export default {
       type: String,
       required: true
     }
-  },
-  methods: {    
-    /* Handle click is automatic in v3 (@click="handleClick") */
-    /*
-    handleClick (event) {
-      this.$emit('click', event)
-    }
-    */
-  }  
+  }
 }
 </script>
 
