@@ -1,4 +1,4 @@
-# Irufy Fronend piece (irufy-front)
+# Irufy Frontend piece (irufy-front)
 
 Irufy Frontend piece
 
