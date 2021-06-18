@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-/*  webpackFinal: async (config, { configType }) => {
+  webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'
     // You can change the configuration based on that.
     // 'PRODUCTION' is used when building the static version of storybook.
@@ -15,7 +15,7 @@ module.exports = {
 
     // Return the altered config
     return config;
-  },*/
+  },
   core: {
     builder: "webpack5",
   },
