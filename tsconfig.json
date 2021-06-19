@@ -1,6 +1,10 @@
 {
   "extends": "@quasar/app/tsconfig-preset",
   "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
     "baseUrl": ".",
     "esModuleInterop": true,
     "types": [
